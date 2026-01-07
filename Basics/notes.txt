@@ -1,0 +1,2 @@
+Producer flow:
+Connect → Channel → Exchange → Queue → Bind → Publish → Close
