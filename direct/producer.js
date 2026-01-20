@@ -2,7 +2,7 @@ const amqp = require("amqplib");
 
 async function sendMail() {
     try {
-        const connection = await amqp.connect("amqp://localhost");
+        const connection = await amqp.connect("amqp://admin:admin123@localhost:5672");
         const channel = await connection.createChannel();
 
         const exchange = "mail_exchange";
